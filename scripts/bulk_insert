@@ -1,0 +1,4 @@
+COPY Table_Name (columns) #Table to receive data
+FROM '/path/to/employees.csv' # file path
+DELIMITER ',' #delimitier
+CSV HEADER; # source file type
