@@ -1,4 +1,4 @@
-/* SQLINES DEMO *** ================================================================
+/*  *** ================================================================
 DDL Script: Create Silver Tables
 ===============================================================================
 Script Purpose:
@@ -11,7 +11,7 @@ Script Purpose:
     DROP TABLE IF EXISTS silver.crm_cust_info;
  
 
--- SQLINES FOR EVALUATION USE ONLY (14 DAYS)
+-- 
 CREATE TABLE silver.crm_cust_info (
     cst_id              INT,
     cst_key             VARCHAR(50),

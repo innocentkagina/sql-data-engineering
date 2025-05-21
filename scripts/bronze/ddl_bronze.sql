@@ -1,5 +1,4 @@
-/* SQLINES DEMO *** ================================================================
-DDL Script: Create Bronze Tables
+/* DDL Script: Create Bronze Tables
 ===============================================================================
 Script Purpose:
     This script creates tables in the 'bronze' schema, dropping existing tables 
@@ -11,7 +10,7 @@ Script Purpose:
     DROP TABLE IF EXISTS bronze.crm_cust_info;
  
 
--- SQLINES FOR EVALUATION USE ONLY (14 DAYS)
+-- 
 CREATE TABLE bronze.crm_cust_info (
     cst_id              INT,
     cst_key             VARCHAR(50),
