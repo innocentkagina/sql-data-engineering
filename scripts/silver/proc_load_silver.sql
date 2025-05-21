@@ -2,7 +2,7 @@
  * Stored Procedure: silver.load_silver()
 
  * Description:
- * This stored procedure inserts silver data from a `bronze` tables into the 
+ * This stored procedure inserts silver data from `bronze` tables into the 
  * respective tables in the `silver` schema.
  * It Truncates `silver` tables first. 
  * The procedure measures and reports both the duration of the INSERT operation in 
