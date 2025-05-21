@@ -36,7 +36,6 @@ BEGIN
      COPY erp_px_cat_g1v2
      FROM 'D:\share\datasets\source_erp\PX_CAT_G1V2.csv'
      DELIMITER ','
-     CSV HEADER; 
-    VALUES (emp_name, emp_position, emp_salary);
+     CSV HEADER;
 
 END;$$;
