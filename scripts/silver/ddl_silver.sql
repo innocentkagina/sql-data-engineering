@@ -28,12 +28,13 @@ CREATE TABLE silver.crm_cust_info (
 
 CREATE TABLE silver.crm_prd_info (
     prd_id       INT,
+    cat_id       VARCHAR(50), # Added column
     prd_key      VARCHAR(50),
     prd_nm       VARCHAR(50),
     prd_cost     INT,
     prd_line     VARCHAR(50),
-    prd_start_dt TIMESTAMP(3),
-    prd_end_dt   TIMESTAMP(3),
+    prd_start_dt DATE, # Altered column
+    prd_end_dt   DATE, # Altered column
     dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
