@@ -2,17 +2,12 @@
  * Stored Procedure: silver.load_silver()
 
  * Description:
- * This stored procedure loads silver data from a several CSV files into the 
- * respective tables in the database.
- * It Truncates tables first. 
- * It utilizes the COPY command for efficient bulk loading of data.
- * The procedure measures and reports both the duration of the COPY operation in 
+ * This stored procedure inserts silver data from a `bronze` tables into the 
+ * respective tables in the `silver` schema.
+ * It Truncates `silver` tables first. 
+ * The procedure measures and reports both the duration of the INSERT operation in 
  * milliseconds and the total duration of the entire 
  * batch process in seconds. It also handles potential errors.
- *
- * Parameters:
- * - file_path: TEXT - The full path to the CSV file containing employee data.
- *
  * Usage:
  * CALL silver.load_silver()
 ===============================================================================
