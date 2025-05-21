@@ -3,9 +3,11 @@
 
  * Description:
  * This stored procedure loads bronze data from a several CSV files into the 
- * respective tables in the database. It utilizes the COPY command for efficient 
- * bulk loading of data. The procedure measures and reports both the duration 
- * of the COPY operation in milliseconds and the total duration of the entire 
+ * respective tables in the database.
+ * It Truncates tables first. 
+ * It utilizes the COPY command for efficient bulk loading of data.
+ * The procedure measures and reports both the duration of the COPY operation in 
+ * milliseconds and the total duration of the entire 
  * batch process in seconds. It also handles potential errors.
  *
  * Parameters:
