@@ -8,6 +8,9 @@
  * The procedure measures and reports both the duration of the INSERT operation in 
  * milliseconds and the total duration of the entire 
  * batch process in seconds. It also handles potential errors.
+ Actions Performed:
+		- Truncates Silver tables.
+		- Inserts transformed and cleansed data from Bronze into Silver tables.
  * Usage:
  * CALL silver.load_silver()
 ===============================================================================
