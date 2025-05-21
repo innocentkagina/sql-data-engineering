@@ -1,4 +1,20 @@
--- DROP PROCEDURE bronze.load_bronze();
+/*
+ * Stored Procedure: bronze.load_bronze()
+
+ * Description:
+ * This stored procedure loads bronze data from a several CSV files into the 
+ * respective tables in the database. It utilizes the COPY command for efficient 
+ * bulk loading of data. The procedure measures and reports both the duration 
+ * of the COPY operation in milliseconds and the total duration of the entire 
+ * batch process in seconds. It also handles potential errors.
+ *
+ * Parameters:
+ * - file_path: TEXT - The full path to the CSV file containing employee data.
+ *
+ * Usage:
+ * CALL bronze.load_bronze()
+===============================================================================
+*/
 
 CREATE OR REPLACE PROCEDURE bronze.load_bronze()
  LANGUAGE plpgsql
